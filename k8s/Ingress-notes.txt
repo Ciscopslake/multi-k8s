@@ -1,0 +1,17 @@
+load balancer = legacy
+
+ingress = new
+
+ingress-nginx = kubernetes -> use this one
+github.com/kubernetes/ingress-nginx 
+kubernetes-ingress = nginx
+
+more info:
+https://www.joyfulbikeshedding.com/blog/2018-03-26-studying-the-kubernetes-ingress-system.html
+
+mandatory command to run ingress:
+
+find it here:
+https://kubernetes.github.io/ingress-nginx/
+
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/mandatory.yaml
